@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+        /* Style for the logo image */
+        .logo {
+            display: block;
+            margin: 0 auto;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-12 text-center">
+                <!-- Logo image in a round shape -->
+                <img src="https://profile.line-scdn.net/0hUpDoiywvCl95Fh45drF1CEVTBDIOOAwXAXESbQ9DXDtdLkgPQXdGag9FADxWJh4JEXgSO1QUBmpd/large" alt="Logo" class="logo img-fluid">
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-md-12">
+                <h2 class="text-center">Privacy Agreement</h2>
+                <p>At Omega Grit, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy outlines how we collect, use, disclose, and protect the information you provide when using our lead form.
+
+Information We Collect
+When you use our lead form, we may collect the following information:
+Name
+Email address
+Phone number
+Company name
+Job title
+Any other information voluntarily provided by you
+
+Use of Information
+We may use the information collected through our lead form for the following purposes:
+To contact you regarding the services or products you have expressed interest in.
+To send you marketing materials and promotional offers, if you have consented to receiving such communications.
+To improve our services and customize our content.
+To comply with legal obligations.
+
+Consent
+By submitting your information through our lead form, you acknowledge that you have read, understood, and agreed to the terms and conditions outlined in this Privacy Policy. You also grant us consent to use your information for the purposes mentioned herein.
+
+Disclosure of Information
+We may share your information with third parties in the following circumstances:
+To fulfill the services or products you have requested.
+With our trusted service providers and partners who assist us in operating our business.
+In response to legal requests or to comply with applicable laws and regulations.
+
+Security
+We take the security of your personal information seriously and employ appropriate technical and organizational measures to protect it from unauthorized access, disclosure, alteration, or destruction.
+
+Your Rights
+You have the right to:
+Access and review the personal information we hold about you.
+Correct any inaccuracies in your personal information.
+Withdraw your consent for marketing communications at any time.
+Request the deletion of your personal information, subject to legal requirements.
+
+Contact Information
+If you have any questions or concerns about these Terms or our privacy practices, please contact us at:
+
+Omega Grit Co., Ltd. 
+4, Naradhiwas Rajanagarindra Rd., 
+Yan Nawa, Sathon, Bangkok 10120
++66 98-278-9262
+hello.omg@omegagrit.com
+
+By submitting your information through the Omega Grit Company lead form, you agree to abide by these Terms & Conditions. Omega Grit Company reserves the right to refuse or cancel any lead form submission at our discretion.</p>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="privacyCheckbox">
+                    <label class="form-check-label" for="privacyCheckbox">I agree to the privacy policy</label>
+                </div>
+                <button class="btn btn-primary mt-3" id="nextButton" disabled>Next</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript to enable the Next button when the checkbox is checked
+        const privacyCheckbox = document.getElementById('privacyCheckbox');
+        const nextButton = document.getElementById('nextButton');
+
+        privacyCheckbox.addEventListener('change', function () {
+            nextButton.disabled = !privacyCheckbox.checked;
+        });
+    </script>
+
+    <!-- Bootstrap JS and jQuery (required for Bootstrap) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
